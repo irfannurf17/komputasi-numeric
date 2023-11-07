@@ -1,0 +1,16 @@
+print("masukan titik pertama : ")
+x0 = float(input('x0 = '))
+y0 = float(input('y0 = '))
+
+print("masukan titik kedua : ")
+x1 = float(input('x1 = '))
+y1 = float(input('y1 = '))
+
+#nilai yang dicari
+xp = float(input('Input nilai xp : '))
+
+#menghitung interpolasi
+yp = y0 + ((y1-y0))/((x1-x0)) * (xp - x0)
+
+#output
+print('Nilai interpolasi pada %0.4f adalah %0.4f' %(xp,yp))
